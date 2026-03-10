@@ -41,28 +41,7 @@ This project implements an **AI-powered triage system** that automatically:
 
 # System Architecture
 
-User Form Submission
-↓
-Airtable Record Created
-↓
-AI Processing Queue
-↓
-ChatGPT Classification
-↓
-Structured JSON Output
-↓
-Zapier JSON Parsing
-↓
-Decision Routing
-
-Human Review
-Low Confidence
-Auto Execute
-
-↓
-Airtable Record Updated
-↓
-Slack Notifications
+![AI Intake & Triage Architecture](./ai-intake-triage-architecture.drawio.png)
 
 ---
 
@@ -204,10 +183,6 @@ Planned extensions include:
 These additional systems will build on the same infrastructure layer.
 
 ---
-
-## System Architecture
-
-![AI Intake & Triage Architecture](./ai-intake-triage-architecture.drawio.png)
 
 # Author
 
