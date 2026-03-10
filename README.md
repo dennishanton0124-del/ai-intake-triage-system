@@ -41,6 +41,8 @@ This project implements an **AI-powered triage system** that automatically:
 
 # System Architecture
 
+![AI Intake & Triage Architecture](./ai-intake-triage-architecture.drawio.png)
+
 User Form Submission
 ↓
 Airtable Record Created
