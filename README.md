@@ -50,9 +50,9 @@ This project implements an **AI-powered triage system** that automatically:
 The automation pipeline is orchestrated using Zapier.  
 It handles form triggers, AI processing, decision routing, and notifications.
 
-![Zapier Workflow Part 1](ai-intake-zapier-workflow-part1.png)
+![Zapier Workflow Part 1](./ai-intake-zapier-workflow-part1.png)
 
-![Zapier Workflow Part 2](ai-intake-zapier-workflow-part2.png)
+![Zapier Workflow Part 2](./ai-intake-zapier-workflow-part2.png)
 
 ---
 
@@ -73,13 +73,13 @@ Key fields stored in Airtable:
 | requires_human_review | escalation flag        |
 | AI Processed          | queue control          |
 
-![Airtable Schema](.ai-intake-triage-airtable-schema-part1.png)
+![Airtable Schema](./ai-intake-triage-airtable-schema-part1.png)
 
-![Airtable Schema](.ai-intake-triage-airtable-schema-part2.png)
+![Airtable Schema](./ai-intake-triage-airtable-schema-part2.png)
 
-![Airtable Schema](.ai-intake-triage-airtable-schema-part3.png)
+![Airtable Schema](./ai-intake-triage-airtable-schema-part3.png)
 
-![Airtable Schema](.ai-intake-triage-airtable-schema-part4.png)
+![Airtable Schema](./ai-intake-triage-airtable-schema-part4.png)
 
 ---
 
@@ -94,7 +94,7 @@ Examples include:
 - Low Confidence Queue
 - Automation Logs
 
-![Airtable Views](.ai-intake-airtable-views-part1.PNG)
+![Airtable Views](./ai-intake-airtable-views-part1.PNG)
 
 ---
 
