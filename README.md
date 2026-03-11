@@ -45,14 +45,18 @@ This project implements an **AI-powered triage system** that automatically:
 
 ---
 
-# Automation Workflow
+## Automation Workflow
 
-The automation pipeline is orchestrated using Zapier.  
-It handles form triggers, AI processing, decision routing, and notifications.
+The AI intake pipeline is orchestrated using Zapier and routes requests based on AI confidence scores.
 
-![Zapier Workflow Part 1](./ai-intake-zapier-workflow-part1.png)
+### Zapier Workflow
 
-![Zapier Workflow Part 2](./ai-intake-zapier-workflow-part2.png)
+![Zapier Workflow Part 1](ai-intake-triage-zapier-workflow-part1.png)
+
+![Zapier Workflow Part 2](ai-intake-triage-zapier-workflow-part2.png)
+
+
+---
 
 ---
 
@@ -83,30 +87,29 @@ Key fields stored in Airtable:
 
 ---
 
-# Operational Monitoring
+## Operational Views
 
-The system includes operational views that track request processing.
+Operational views track the AI processing pipeline and escalation queues.
 
-Examples include:
-
-- AI Processing Queue
-- Human Review Queue
-- Low Confidence Queue
-- Automation Logs
-
-![Airtable Views](./ai-intake-airtable-views-part1.PNG)
+![Airtable Views](ai-intake-triage-airtable-views-part1.png)
 
 ---
 
-# Slack Notifications
+## Slack Notifications
 
-When requests require human review or have low confidence scores, the system sends Slack alerts.
+The system automatically alerts operators when requests require human review or fall below confidence thresholds.
 
-![Slack Notification](./ai-intake-slack-notification-part1.PNG)
+### Human Review Alert
 
-![Slack Notification](./ai-intake-slack-notification-part2.PNG)
+![Slack Notification](ai-intake-triage-slack-notification-part1.png)
 
-![Slack Notification](./ai-intake-slack-notification-part3.PNG)
+### Low Confidence Alert
+
+![Slack Notification](ai-intake-triage-slack-notification-part2.png)
+
+### Auto Execution Notification
+
+![Slack Notification](ai-intake-triage-slack-notification-part3.png)
 
 ---
 
