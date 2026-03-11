@@ -1,41 +1,72 @@
 # AI Intake & Triage Automation System
 
-An AI-powered workflow that converts unstructured requests into structured decisions and automated actions.
+An AI-powered workflow that automatically classifies inbound requests, routes them through automation pipelines, and escalates low-confidence cases for human review.
 
-This system automatically classifies inbound requests, determines whether they require human review, and routes them through an operational workflow.
+## System Overview
 
----
+This project demonstrates an **AI-powered intake and triage system** designed to automatically process inbound requests, classify them using an LLM, and route them to the appropriate workflow.
 
-# Problem
+The system simulates a real operational environment where incoming requests must be:
 
-Organizations receive a large number of inbound requests such as:
+• analyzed by AI  
+• structured into machine-readable data  
+• routed based on confidence scores  
+• escalated to humans when necessary  
 
-- billing questions
-- support issues
-- feature requests
-- sales inquiries
-
-These requests typically arrive as **unstructured text**, requiring manual triage before action can be taken.
-
-Manual triage creates several problems:
-
-- slow response times
-- inconsistent routing
-- operational inefficiencies
-- difficulty scaling support workflows
+The architecture combines **AI classification with workflow automation** to create a scalable request-handling pipeline.
 
 ---
 
-# Solution
+## Problem
 
-This project implements an **AI-powered triage system** that automatically:
+Organizations receive large volumes of inbound requests from customers, employees, or partners.
 
-1. Captures inbound requests through a form
-2. Uses an LLM to classify the request
-3. Generates structured JSON output
-4. Routes the request based on AI confidence
-5. Escalates uncertain cases to human reviewers
-6. Logs activity for operational monitoring
+Manually reviewing and routing these requests creates several problems:
+
+• slow response times  
+• inconsistent categorization  
+• human error  
+• lack of operational visibility  
+
+A scalable system needs to automatically analyze requests and route them intelligently.
+
+---
+
+## Solution
+
+This system uses an AI classification pipeline combined with automation tools.
+
+The workflow:
+
+1. Users submit a request through an intake form  
+2. The request is stored in Airtable  
+3. An LLM analyzes the request and generates structured output  
+4. The system calculates a confidence score  
+5. Requests are routed to one of three paths:
+
+• **Auto Execute** – handled automatically  
+• **Human Review** – escalated to Slack  
+• **Low Confidence** – flagged for investigation  
+
+---
+
+## Key Capabilities
+
+• AI-powered request classification  
+• structured JSON outputs from LLMs  
+• human-in-the-loop automation  
+• operational monitoring through Airtable views  
+• Slack alerting for escalations  
+
+---
+
+## Tech Stack
+
+• OpenAI / ChatGPT  
+• Zapier automation workflows  
+• Airtable data storage  
+• Slack notifications  
+• Tally intake forms
 
 ---
 
@@ -172,24 +203,6 @@ The system includes monitoring views in Airtable such as:
 - Low Confidence Queue
 - Automation Log
 - Processing Errors
-
----
-
-# Tech Stack
-
-Automation:
-- Zapier
-- AI
-- OpenAI / ChatGPT
-
-Data Storage:
-- Airtable
-
-Notifications:
-- Slack
-
-Data Format:
-- JSON
 
 ---
 
